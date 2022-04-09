@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* #FFF , #4450E9 */
+/* header///////////////////////////////////////////////////////7 */
+main{
+    min-height: calc(100vh - 180px);
+}
+.header__nav{
+    width: 100%;
+    height: 80px;
+    background-color:#FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 3px #000;
+}
+.header__nav__h1{
+    font-size: 2rem;
+    color: #4450E9  ;
+}
+.header__nav__ul{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__nav__ul__li__a{
+    border-bottom: 1px solid #cecece;
+    padding: 10px 25px;
+    transition: all .3s;
+}
+.inicio,.ayuda,.contacto{
+    border-bottom: 1px solid #4450E9;
+    padding: 10px 25px;
+    transition: all .3s;
+}
+
+.header__nav__ul__li a:hover{
+    padding: 10px 35px;
+    background-color: #4450E9;
+    color: #FFF;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* main/////////////////////////////////// */
+
+img{
+    width: 390px;
+    height: 250px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.noticias{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+}
+.noticias1{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.noticias2{
+    width: 29%;
+}
+.noticias1__article{
+    width: 400px;
+    height: 450px;
+    margin: 30px;
+    border: 1px solid #7c7a7a81;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+.noticias1__article p{
+    padding: 0px 30px;
+    text-align: center;
+    color: #7c7c7c;
+}
+.noticias1__article span{
+   font-weight: bold;
+   color: #4450E9;
+}
+.noticias1__article__button{
+background-color: #4450E9;
+color: #fff;
+padding: 10px  20px;
+margin: 15px;
+transition:.3s;
+}
+.noticias1__article__button:hover{
+    background-color: #fff;
+    color: #4450E9;
+    border: 1px solid #4450E9;
+    border-radius: 15px;
+}
+
+/* footer /////////////*/
+.footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4450E9;
+  
+}
+
+.fab{
+    margin: 0px 25px;
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.footer p{
+ color: #1e1e1e;
+ 
+}
+
+
+
+/* SECION AYUDAAA */
+.main__ayuda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__ayuda i{
+    font-size: 3rem;
+    color: #4450E9;
+}
