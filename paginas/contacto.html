@@ -6,49 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Mi blog</title>
+    <title>Contacto</title>
     <script src="https://kit.fontawesome.com/a11a1742be.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
     <header class="header">
         <nav class="header__nav">
-            <h1 class="header__nav__h1">Mi Blog</h1>
+            <a href="../index.html"> <h1 class="header__nav__h1">Mi Blog</h1></a>
             <ul class="header__nav__ul">
-                <li class="header__nav__ul__li "><a class="header__nav__ul__li__a"   href="../index.html">Inicio</a></li>
+                <li class="header__nav__ul__li "><a class="header__nav__ul__li__a" href="../index.html">Inicio</a></li>
                 <li class="header__nav__ul__li "> <a class="header__nav__ul__li__a " href="ayuda.html">Ayuda</a></li>
-                <li class="header__nav__ul__li"> <a class="header__nav__ul__li contacto "  href="contacto.html">Contacto</a></li>
+                <li class="header__nav__ul__li"> <a class="header__nav__ul__li contacto "
+                        href="contacto.html">Contacto</a></li>
+                <li class="header__nav__ul__li"> <a class="header__nav__ul__li__a " href="galeria.html">Galeria</a>
+                </li>
+            </ul>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main__contacto">
 
+        <form class="formulario">
+            <h1 class="formulario__h1">FORMULARIO PERSONAL</h1>
+            <input type="text" name="nombre" id="" placeholder="Nombre">
+            <input type="text" name="apellidoPaterno" id="" placeholder="Apellido Paterno">
+            <input type="text" name="apellidoMaterno" id="" placeholder="Apellido Materno">
+            <input type="text" name="RFC" id="" placeholder="RFC">
+            <input type="text" name="codigoPostal" class="codigoPostal" id="" placeholder="Codigo postal">
+            <article class="formulario__select ">
+                <label for="provincia">Provincia</label>
+                <select name="provincia" id="provincia">
+
+                    <option name="provincia" value="provincia" id="provincia">Jujuy</option>
+                </select>
+
+
+            </article>
+            <article class="formulario__select">
+                <label for="localidad">localidad</label>
+                <select name="localidad" id="localidad">
+                    <option name="localidad" value="localidad" id="localidad">San salvador de Jujuy</option>
+
+                </select>
+            </article>
+            <article class="formulario__select">
+                <label for="Barrio">Barrio:</label>
+                <select name="Barrio" id="Barrio">
+                    <option name="Barrio" value="Barrio" id="Barrio"> </option>
+                    <option name="Malvinas" value="Malvinas" id="Barrio">Malvinas</option>
+                    <option name="Belgrano" value="Belgrano" id="Barrio">Belgrano</option>
+                    <option name="sanpedrito" value="sanpedrito" id="Barrio">S.Pedrito</option>
+                    <option name="altocomedero" value="altocomedero" id="Barrio">A.Comedero</option>
+                    <option name="laviña" value="laviña" id="Barrio">La viña</option>
+
+                </select>
+            </article>
+            <article class="agregarColonia">
+                <label for="agregarColonia">Agregar Barrio</label>
+                <input class="input__checkbox" type="checkbox" name="agregarColonia" id="agregarColonia">
+            </article>
+
+            <article class="formulario__select">
+                <label for="">Sexo:</label>
+                <input class="input__radio" type="radio" name="hombre" id="hombre">Hombre
+                <input class="input__radio" type="radio" name="mujer" id="mujer">Mujer
+            </article>
+            <article class="formulario__select">
+                <label for="fechadeNac">Fecha de nacimiento:</label>
+                <input type="date" name="fechadeNac" id="fechadeNac">
+            </article>
+            <input type="email" name="email" class="email" id="" placeholder="Email@.com">
+
+            <input class="btnEnviar" type="submit" value="Enviar..">
+        </form>
     </main>
 
     <footer class="footer">
 
-        <section class="footer__redes">
-            <a class="footer__redes__facebook" href="#" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a class="footer__redes__facebook instagram" href="#" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a class="footer__redes__facebook youtube" href="#" target="_blank">
-                <i class="fab fa-youtube"></i>
-            </a>
+        <div>
+            <h2>Mi blog</h2>
+        </div>
+        <div class="footer1">
+            <section class="footer__redes">
+                <a class="footer__redes__facebook" href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="footer__redes__facebook instagram" href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="footer__redes__facebook youtube" href="#" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
 
-        </section>
-        <p>
-            Derechos reservados al autor 2022 <i class="fas fa-copyright"></i>
+            </section>
+            <p>
+                Derechos reservados al autor 2022 <i class="fas fa-copyright"></i>
 
-        </p>
-
+            </p>
+        </div>
     </footer>
 
 
 
 </body>
+
 </html>
-
-

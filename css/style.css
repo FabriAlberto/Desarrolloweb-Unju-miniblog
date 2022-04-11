@@ -9,6 +9,13 @@
 main{
     min-height: calc(100vh - 180px);
 }
+.h2__index{
+    margin-top: 30px;
+    margin-left:30px;
+    font-size: 2rem;
+    color: #7c7c7c;
+    font-weight: lighter;
+}
 .header__nav{
     width: 100%;
     height: 80px;
@@ -35,7 +42,7 @@ main{
     padding: 10px 25px;
     transition: all .3s;
 }
-.inicio,.ayuda,.contacto{
+.inicio,.ayuda,.contacto,.galeria{
     border-bottom: 1px solid #4450E9;
     padding: 10px 25px;
     transition: all .3s;
@@ -53,6 +60,16 @@ li{
 a{
     text-decoration: none;
     color: #000;
+    margin-left: 10px;
+}
+.fa-arrow-right{
+    margin-right: 10px;
+      color: #1e1e1eab;
+font-size: 2rem;
+}
+.fa-arrow-left{
+  color: #1e1e1eab;
+  font-size: 2rem;
 }
 
 
@@ -70,7 +87,7 @@ img{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 50px;
+   
 }
 .noticias1{
     width: 70%;
@@ -80,6 +97,59 @@ img{
 }
 .noticias2{
     width: 29%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.article2__div__img{
+    width: 230px;
+    height: 200px;
+}
+.article2{
+    margin-top: 30px;
+    
+}
+.article2 p{
+    color: #4450E9;
+    font-size: 1rem;
+    font-weight: bold;
+   text-align: center;
+}
+.article2__miCv{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #4450E9;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    
+    
+
+}
+.article2__miCv__p{
+    color: #fff;
+    font-size: 16px;
+}
+.fabri
+{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.btn__miCv{
+    position: absolute;
+   padding: 10px 20px ;
+    background-color: #FFF;
+    color: #4450E9;
+    border-radius: 20px;
+    margin-top:180px;
+}
+.btn__miCv:hover{
+    transform: scale(.95);
+    background-color: rgba(255, 255, 255, 0.603);
 }
 .noticias1__article{
     width: 400px;
@@ -115,18 +185,26 @@ transition:.3s;
     border-radius: 15px;
 }
 
-/* footer /////////////*/
+
+
+/* footer ///////////////////////////////////77*/
 .footer{
   width: 100%;
   height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   background-color: #4450E9;
   
 }
-
+.footer1{
+    width: 80%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .fab{
     margin: 0px 25px;
     color: #FFF;
@@ -137,10 +215,13 @@ transition:.3s;
  color: #1e1e1e;
  
 }
+.footer h2{
+    font-size: 2rem;
+    color: #FFF;
+}
 
 
-
-/* SECION AYUDAAA */
+/*///////////////////////////// SECION AYUDAAA///////////////////////////////////77 */
 .main__ayuda{
     display: flex;
     flex-direction: column;
@@ -150,4 +231,203 @@ transition:.3s;
 .main__ayuda i{
     font-size: 3rem;
     color: #4450E9;
+}
+
+
+
+/* ////////////////////////////contacto//////////////////////////////////////////// */
+
+.main__contacto{
+   background-image: url(../imagenes/contacto.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.formulario__h1{
+    color: #fcfcfc;
+    text-shadow: 0px 0px 20px #4450E9,0px 0px 30px #4450E9,0px 0px 15px #4450E9
+}
+
+.formulario{
+    padding: 50px 0px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px #000;
+    margin: 50px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #4450E9;
+    color: #FFF;
+    width: 300px;
+    height: 70px;
+    outline: none;
+  font-size: 1rem;
+}
+input:focus{
+    /* background: linear-gradient(to bottom, transparent,#444fe996); */
+   background-color: #444fe934;
+    outline: none;
+}
+::placeholder{
+    color: #cfcfcf;
+
+}
+label{
+    color:  #cfcfcf;
+    font-size: 1rem;
+}
+.formulario__select{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #4450E9;
+    color: #FFF;
+    width: 300px;
+    height: 70px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+select{
+    margin-left: 20px;
+    width: 150px;
+    height: 30px;
+    outline: none;
+}
+.input__checkbox{
+    width: auto;
+}
+
+.input__radio{
+    width: auto;
+    margin-left: 20px;
+}
+
+.agregarColonia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btnEnviar{
+    font-size: 1.2rem;
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 10px 20px;
+    background-color: #4450E9;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btnEnviar:hover{
+    transform: scale(.9);
+    background-color: #2c39ec;
+    
+
+}
+
+
+/* /////////////////micv///////////// */
+.h2__micv{
+    display: inline-block;
+    color: #1e1e1e;
+    margin-top: 30px;
+    font-size: 2rem;
+    margin-left: 30px;
+    font-weight: lighter;
+    border-right: 1px solid #4450E9;
+}
+.main__micv{
+    width: 100%;
+   
+}
+.micv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+
+}
+.micv__img{
+    padding: 8px;
+    width: 50%;
+    height: 1000px;
+   border: 2px solid #4450E9;
+    object-fit:contain;
+}
+.btn__descargarCv{
+margin:50px 0px ;
+padding: 10px 20px;
+background-color: #000000;
+color: #4450E9;
+font-weight: bold;
+border-radius: 10px;
+}
+
+/* ////////////////galeria///////////////////////// */
+.h2__slider{
+  
+     text-align: center;
+    color: #1e1e1e;
+    margin-top: 30px;
+    font-size: 2rem;
+    margin-left: 30px;
+    font-weight: lighter;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel{
+
+    width: 800px;
+    height: 400px;  
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.cont__carrusel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.flechas__carrusel{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card__carrusel{
+    height: 400px;
+    width: 100%;
+}
+
+
+img{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
